@@ -1,0 +1,1 @@
+This pull request implements dynamic .scrivx file location based on the project's root directory name and handles duplicate image filenames by appending a unique number to ensure no images overwrite each other.
