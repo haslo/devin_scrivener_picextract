@@ -1,6 +1,10 @@
 # Scrivener Image Extractor
 
-This Python script is designed to extract all images from a Scrivener project and save them to a specified output directory.
+This Python script is designed to extract all images from a [Scrivener](https://www.literatureandlatte.com/scrivener/overview) project and save them to a specified output directory.
+
+## Creation
+
+This script was entirely written by [Devin](https://www.cognition-labs.com/introducing-devin), with prompting by [haslo](https://github.com/haslo).
 
 ## Usage
 
@@ -30,12 +34,7 @@ This will extract all images from `MyScrivenerProject.scriv` and place them in t
 ## Notes
 
 - The script currently extracts images with the following extensions: `.png`, `.jpg`, `.jpeg`, `.gif`, `.bmp`.
-- Images are copied with their original filenames. If the original filenames are not available, they will be saved with the filenames found in the project.
-- The script does not currently restore original filenames if they have been changed within the Scrivener project. This may be a feature added in future updates.
-
-## Contributing
-
-If you would like to contribute to this project or suggest improvements, please feel free to do so via the GitHub repository.
+- Images are copied with their names as in the Scrivener project.
 
 ## License
 
