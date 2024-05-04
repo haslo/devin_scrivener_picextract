@@ -13,7 +13,9 @@ def extract_images(scrivener_project_root, output_directory):
     output_directory.mkdir(parents=True, exist_ok=True)
 
     # Determine the .scrivx file name from the project root directory name
-    project_name = scrivener_project_root.stem
+    project_name = scrivener_project_root.stem  # Assuming the project root directory ends with '.scriv'
+    if project_name.endswith('.scriv'):
+        project_name = project_name[:-6]  # Remove the '.scriv' part
     scrivx_file = scrivener_project_root / f"{project_name}.scrivx"
 
     tree = ET.parse(scrivx_file)
